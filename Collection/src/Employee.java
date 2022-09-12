@@ -22,6 +22,7 @@ public class Employee {
 		ArrayList<Emp> al = new ArrayList<>();
 		al.add(new Emp(1,"Ram",10000));
 		al.add(new Emp(2,"Sham",20000));
+		al.add(new Emp(2,"Sham",20000));
 		for(Emp e: al)
 			System.out.println(e);
 		

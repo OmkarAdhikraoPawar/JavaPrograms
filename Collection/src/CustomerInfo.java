@@ -16,6 +16,7 @@ public class CustomerInfo {
 		l.add(new Customer(1,"Suraj",25));
 		l.add(new Customer(2,"Ram",23));
 		l.add(new Customer(3,"Sham",24));
+		l.add(new Customer(2,"Ram",23));
 		System.out.println(l);
 		
 	}
@@ -64,6 +65,20 @@ public class CustomerInfo {
 		}
 		showmin(min);		
 	}
+	public void occurance()
+	{
+		for(int i=0; i<l.size(); i++)
+		{
+			if(l.get(i) == null)
+				continue;
+			System.out.println(l.get(i)+" Occurance "+ Collections.frequency(l, l.get(i)));
+			for(int j=i+1; j<l.size(); j++)
+			{
+				if(l.get(i) != null && l.get(i).equals(l.get(j)))
+						l.set(j, null);
+			}
+		}
+	}
 	public void showmin(int min)
 	{
 		System.out.println();
@@ -105,6 +120,7 @@ public class CustomerInfo {
 		//obj.showList();
 		//obj.minimumAge();
 		//obj.changeAge();
+		obj.occurance();
 		
 	}
 

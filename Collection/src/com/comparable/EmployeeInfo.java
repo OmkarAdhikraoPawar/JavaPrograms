@@ -19,7 +19,7 @@ public class EmployeeInfo {
 	
 
 	public static void main(String[] args) {
-		ArrayList<Employee> e = new ArrayList();
+		ArrayList<Employee> e = new ArrayList<>();
 		e.add(new Employee(101,"Suraj","President",35));
 		e.add(new Employee(99,"Akash","Chairperson",40));
 		e.add(new Employee(485,"Amar","CEO",33));

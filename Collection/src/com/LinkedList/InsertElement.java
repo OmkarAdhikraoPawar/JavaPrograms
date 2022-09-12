@@ -21,7 +21,7 @@ public class InsertElement {
 	}
 
 	public static void main(String[] args) {
-		LinkedList <Integer> l = new LinkedList();
+		LinkedList <Integer> l = new LinkedList<>();
 		l.add(11);
 		l.add(22);
 		l.add(33);
